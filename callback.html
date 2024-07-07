@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Fantasy Football Auth Callback</title>
+</head>
+<body>
+    <h1>Yahoo Fantasy Football Auth Callback</h1>
+    <p>Autenticación exitosa. Puedes cerrar esta ventana.</p>
+    <script>
+        // Aquí puedes agregar código JavaScript para manejar el token de acceso
+        // Ejemplo de cómo obtener el código de autorización desde la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        console.log('Authorization code:', code);
+
+        // Aquí puedes hacer una solicitud para intercambiar el código por un token de acceso
+        // utilizando tu servidor backend.
+    </script>
+</body>
+</html>
